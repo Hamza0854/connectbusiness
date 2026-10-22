@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sign in as a business owner | Business & Investor Connect</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body class="auth" data-page="login">
+  <main class="auth-main">
+    <a href="index.html" class="wordmark mb-4">
+      <svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true"><rect width="28" height="28" rx="7" fill="#1E5B45"/><rect x="7" y="14" width="4" height="7" rx="1" fill="#fff"/><rect x="12.5" y="10" width="4" height="11" rx="1" fill="#fff"/><rect x="18" y="6" width="4" height="15" rx="1" fill="#D99A1E"/></svg>
+      Business &amp; Investor Connect
+    </a>
+
+    <div class="panel auth-panel">
+      <nav class="segmented" aria-label="Choose account type">
+        <a href="owner-login.html" aria-current="page">Business owner</a>
+        <a href="investor-login.html">Investor</a>
+      </nav>
+
+      <h1 class="auth-title">Sign in to your business</h1>
+      <p class="auth-lead">You'll see ABC Enterprise's profile, financial figures and funding request.</p>
+
+      <form id="loginForm" data-redirect="owner-dashboard.html" novalidate>
+        <div class="mb-3">
+          <label class="form-label" for="email">Email</label>
+          <input type="email" class="form-control" id="email" value="kwame@abcenterprise.com" autocomplete="email" required>
+          <div class="invalid-feedback">Enter an email address.</div>
+        </div>
+        <div class="mb-4">
+          <label class="form-label" for="password">Password</label>
+          <input type="password" class="form-control" id="password" value="demo1234" autocomplete="current-password" required>
+          <div class="invalid-feedback">Enter a password.</div>
+        </div>
+        <button type="submit" class="btn btn-main w-100">Sign in</button>
+      </form>
+
+      <p class="demo-note">Demo sign-in. The details are filled in for you, and any email and password will work.</p>
+    </div>
+
+    <p class="auth-foot">School project prototype. All businesses and figures are fictional.</p>
+  </main>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
